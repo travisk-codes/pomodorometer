@@ -1,9 +1,9 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@prisma/client'
 
-const db = new PrismaClient();
+const db = new PrismaClient()
 
 async function validateConnection() {
-	return db.user.findMany()
+  return db.user.findMany()
 }
 
-export { db, validateConnection };
+export { db, validateConnection }
